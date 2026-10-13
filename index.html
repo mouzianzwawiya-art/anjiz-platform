@@ -1,128 +1,50 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10243a">
-  <meta name="description" content="ANJIZ — منصتك لإنجاز أعمالك الأكاديمية والمكتبية">
-  <title>ANJIZ | أَنْجِز</title>
-  <link rel="icon" href="anjiz-icon.svg" type="image/svg+xml">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#10243a"><meta name="description" content="ANJIZ — منصتك لإنجاز أعمالك الأكاديمية والمكتبية">
+<title>ANJIZ | أَنْجِز</title>
+<link rel="icon" href="anjiz-icon.svg" type="image/svg+xml"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="splash" id="splash" aria-label="ANJIZ">
-    <div class="splash-mark"><img src="anjiz-icon.svg" alt="شعار أَنْجِز"></div>
-    <h1>ANJIZ <span>أَنْجِز</span></h1>
-    <p>منصتك لإنجاز أعمالك الأكاديمية والمكتبية</p>
-    <div class="loader"></div>
-  </div>
-
-  <header class="topbar">
-    <a class="brand" href="#home" aria-label="ANJIZ الصفحة الرئيسية">
-      <img src="anjiz-icon.svg" alt="">
-      <span><b>ANJIZ</b><small>أَنْجِز</small></span>
-    </a>
-    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
-    <nav id="mainNav">
-      <a href="#services">الخدمات</a>
-      <a href="#marketplace">مستقلون</a>
-      <a href="#projects">مشاريعي</a>
-      <a href="#smart">الأدوات الذكية</a>
-    </nav>
-    <div class="top-actions">
-      <button class="icon-button" id="themeToggle" aria-label="تغيير المظهر" title="تغيير المظهر">◐</button>
-      <select id="languageSelect" aria-label="اللغة">
-        <option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option>
-      </select>
-      <button class="button button-outline" id="profileBtn">الملف الشخصي</button>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="hero section-wrap">
-      <div class="hero-copy">
-        <span class="eyebrow"><span class="pulse"></span> مساحة واحدة لكل إنجازاتك</span>
-        <h1>أعمالك الأكاديمية<br><em>تبدأ من هنا.</em></h1>
-        <p>نظّم مشاريعك، اكتشف الخدمات المناسبة، وحضّر أعمالك الجامعية والمكتبية من مكان واحد.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#services">اكتشف الخدمات <span>←</span></a>
-          <a class="button button-soft" href="#projects">ابدأ مشروعك</a>
-        </div>
-        <div class="hero-note"><span class="check">✓</span> بدون تسجيل إجباري — يمكنك البدء مباشرة</div>
-      </div>
-      <div class="hero-visual">
-        <div class="visual-glow"></div>
-        <div class="dashboard-card">
-          <div class="dash-head"><span class="mini-logo">A</span><div><b>مساحة الإنجاز</b><small>كل شيء في مكانه</small></div><span class="dots">•••</span></div>
-          <div class="progress-title"><span>مشروع التخرج</span><b>68%</b></div>
-          <div class="progress"><span style="width:68%"></span></div>
-          <div class="dash-grid">
-            <div class="dash-tile tile-blue"><span>▤</span><b>بحث جامعي</b><small>آخر تعديل اليوم</small></div>
-            <div class="dash-tile tile-teal"><span>✎</span><b>مذكرة التخرج</b><small>قيد التنظيم</small></div>
-            <div class="dash-tile tile-purple"><span>▦</span><b>عرض تقديمي</b><small>8 شرائح</small></div>
-            <div class="dash-tile tile-gold"><span>⌕</span><b>المراجع</b><small>12 مرجعًا</small></div>
-          </div>
-          <div class="dash-foot"><span class="status-dot"></span> مساحة العمل جاهزة لتنظيم مشروعك</div>
-        </div>
-        <div class="float-badge badge-one">✦ <span>تنظيم أسهل</span></div>
-        <div class="float-badge badge-two">✓ <span>تقدّمك محفوظ على هذا الجهاز</span></div>
-      </div>
-    </section>
-
-    <section class="stats section-wrap">
-      <div><b>01</b><span>نظّم أعمالك</span></div><div><b>02</b><span>اكتشف الخدمات</span></div><div><b>03</b><span>تابع مشاريعك</span></div><div><b>04</b><span>طوّر إنجازك</span></div>
-    </section>
-
-    <section class="section-wrap section" id="services">
-      <div class="section-heading"><div><span class="eyebrow">خدمات أَنْجِز</span><h2>ما الذي تريد إنجازه اليوم؟</h2><p>اختر الأداة المناسبة وابدأ بخطوة بسيطة.</p></div>
-        <div class="searchbox"><span>⌕</span><input id="serviceSearch" type="search" placeholder="ابحث عن خدمة..."></div>
-      </div>
-      <div class="service-grid" id="serviceGrid">
-        <button class="service-card" data-service="مذكرة التخرج" data-desc="خطّط لأقسام المذكرة، رتّب الأفكار، وأنشئ قائمة مهام واضحة."><span class="service-icon blue">▤</span><b>مذكرة التخرج</b><small>تنظيم الفصول وخطة العمل</small><span class="card-arrow">↗</span></button>
-        <button class="service-card" data-service="بحث جامعي" data-desc="ابدأ بتحديد الموضوع، الإشكالية، الأهداف، والكلمات المفتاحية للبحث."><span class="service-icon teal">⌕</span><b>بحث جامعي</b><small>من الفكرة إلى خطة البحث</small><span class="card-arrow">↗</span></button>
-        <button class="service-card" data-service="تقرير التربص" data-desc="أنشئ هيكلًا لتقرير التربص مع أقسام المؤسسة والمهام والخلاصة."><span class="service-icon purple">▣</span><b>تقرير التربص</b><small>هيكل واضح وتتبّع للمهام</small><span class="card-arrow">↗</span></button>
-        <button class="service-card" data-service="Word" data-desc="تذكير بأهم عناصر تنسيق المستندات: العناوين، الفهرس، الهوامش والترقيم."><span class="service-icon blue">W</span><b>Microsoft Word</b><small>تنسيق المستندات</small><span class="card-arrow">↗</span></button>
-        <button class="service-card" data-service="Excel" data-desc="خطّط للجداول، الحسابات، وتنظيم البيانات حسب احتياجك."><span class="service-icon green">▦</span><b>Microsoft Excel</b><small>جداول وتنظيم بيانات</small><span class="card-arrow">↗</span></button>
-        <button class="service-card" data-service="PowerPoint" data-desc="حضّر مخططًا للعرض: مقدمة، محاور رئيسية، نتائج وخاتمة."><span class="service-icon orange">▥</span><b>PowerPoint</b><small>تخطيط العروض التقديمية</small><span class="card-arrow">↗</span></button>
-        <button class="service-card" data-service="المراجع العلمية" data-desc="اجمع بيانات المراجع الأساسية وتحقق من المصدر قبل اعتماد أي مرجع."><span class="service-icon gold">⌘</span><b>المراجع العلمية</b><small>تنظيم بيانات المصادر</small><span class="card-arrow">↗</span></button>
-        <button class="service-card" data-service="التحضير للمناقشة" data-desc="حضّر قائمة أسئلة محتملة ونقاطًا مختصرة لشرح منهجيتك ونتائجك."><span class="service-icon rose">✦</span><b>التحضير للمناقشة</b><small>نقاط العرض والأسئلة</small><span class="card-arrow">↗</span></button>
-      </div>
-      <p class="small-note">ملاحظة: الأدوات الحالية تساعدك على التنظيم والتخطيط؛ إنشاء محتوى بالذكاء الاصطناعي يحتاج إلى ربط خدمة فعلية لاحقًا.</p>
-    </section>
-
-    <section class="smart-band" id="smart"><div class="section-wrap smart-inner">
-      <div><span class="eyebrow light">أدواتك في مكان واحد</span><h2>حوّل الفكرة إلى<br><em>خطة قابلة للتنفيذ.</em></h2><p>اكتب ما تريد إنجازه، وسيُحفظ كمسودة محلية على جهازك لتعود إليه متى احتجت.</p></div>
-      <form class="quick-form" id="quickForm"><label for="quickTitle">ما الذي تعمل عليه الآن؟</label><input id="quickTitle" required maxlength="100" placeholder="مثال: خطة مذكرة حول سوسيولوجيا العمل"><label for="quickDetails">تفاصيل إضافية (اختياري)</label><textarea id="quickDetails" rows="3" maxlength="1000" placeholder="اكتب ملاحظاتك أو الخطوة القادمة..."></textarea><button class="button button-primary" type="submit">حفظ في مشاريعي <span>←</span></button><small>الحفظ محلي على هذا الجهاز فقط، وليس في حساب سحابي.</small></form>
-    </div></section>
-
-    <section class="section-wrap section" id="projects">
-      <div class="section-heading"><div><span class="eyebrow">مساحة العمل</span><h2>مشاريعي</h2><p>مسوداتك المحفوظة على هذا الجهاز.</p></div><button class="button button-outline" id="exportProjects">تصدير نسخة احتياطية</button></div>
-      <div id="projectList" class="project-list"><div class="empty-state"><span>▤</span><b>مساحة عملك تنتظرك</b><p>أضف أول مشروع من خلال نموذج الأدوات الذكية أعلاه.</p></div></div>
-    </section>
-
-    <section class="section-wrap section" id="marketplace">
-      <div class="section-heading"><div><span class="eyebrow">مجتمع الإنجاز</span><h2>اكتشف خدمات المستقلين</h2><p>نماذج توضيحية لشكل السوق؛ هذه الملفات ليست حسابات حقيقية.</p></div><span class="demo-pill">عرض تجريبي</span></div>
-      <div class="freelancer-grid">
-        <article class="freelancer-card"><div class="avatar avatar-blue">م</div><div class="freelancer-info"><b>محرر أكاديمي</b><span>تنسيق البحوث والمذكرات</span><small>ملف توضيحي · غير متاح للطلب</small></div><span class="tag">Word</span></article>
-        <article class="freelancer-card"><div class="avatar avatar-teal">ع</div><div class="freelancer-info"><b>مصمم عروض</b><span>عروض تقديمية أكاديمية</span><small>ملف توضيحي · غير متاح للطلب</small></div><span class="tag">PowerPoint</span></article>
-        <article class="freelancer-card"><div class="avatar avatar-purple">س</div><div class="freelancer-info"><b>مساعد بحث</b><span>تنظيم المصادر والمراجع</span><small>ملف توضيحي · غير متاح للطلب</small></div><span class="tag">مراجع</span></article>
-      </div>
-      <div class="join-banner"><div><b>هل تقدم خدمات أكاديمية أو مكتبية؟</b><p>يمكن إضافة التسجيل الحقيقي للمستقلين بعد تجهيز قاعدة بيانات ونظام آمن.</p></div><button class="button button-outline" id="joinProBtn">تفاصيل الانضمام</button></div>
-    </section>
-  </main>
-
-  <footer class="footer"><a class="brand" href="#home"><img src="anjiz-icon.svg" alt=""><span><b>ANJIZ</b><small>أَنْجِز</small></span></a><p>منصتك لإنجاز أعمالك الأكاديمية والمكتبية</p><small>© <span id="year"></span> ANJIZ — نسخة أولية قابلة للتطوير</small></footer>
-
-  <dialog id="serviceDialog" class="modal"><form method="dialog"><button class="close-modal" aria-label="إغلاق">×</button></form><span class="eyebrow">خدمة أَنْجِز</span><h2 id="serviceTitle">الخدمة</h2><p id="serviceDesc"></p><form id="serviceSaveForm"><label for="serviceNote">أضف ملاحظة أو خطوة تريد تذكّرها</label><textarea id="serviceNote" rows="4" placeholder="اكتب هنا..." maxlength="1000"></textarea><button class="button button-primary" type="submit">حفظ كمشروع</button></form><small class="small-note">هذه أداة تنظيم محلية وليست خدمة كتابة آلية.</small></dialog>
-
-  <dialog id="profileDialog" class="modal"><form method="dialog"><button class="close-modal" aria-label="إغلاق">×</button></form><span class="eyebrow">ملفك الشخصي</span><h2>إعدادات أَنْجِز</h2><p>يمكنك استخدام النسخة الحالية دون إنشاء حساب.</p><div class="settings-list"><button id="profileTheme">تغيير المظهر الفاتح / الداكن</button><label>اللغة <select id="settingsLanguage"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select></label><button id="aboutBtn">حول التطبيق والخصوصية</button><button id="accountBtn">إنشاء حساب (غير مفعّل بعد)</button></div><p class="small-note" id="aboutText" hidden>هذه النسخة تحفظ المشاريع على جهازك فقط. لا يوجد تسجيل دخول حقيقي أو مزامنة سحابية أو دفع إلكتروني مفعّل.</p></dialog>
-
-  <dialog id="accountDialog" class="modal"><form method="dialog"><button class="close-modal" aria-label="إغلاق">×</button></form><span class="eyebrow">الحسابات</span><h2>الحسابات قيد التطوير</h2><p>إنشاء الحسابات الحقيقي يحتاج إلى خادم وقاعدة بيانات وحماية لكلمات المرور. لم يتم تفعيل التسجيل بعد، لذلك لا تدخلي كلمة مرورك هنا.</p><button class="button button-primary" id="accountClose">حسنًا، فهمت</button></dialog>
-
-  <dialog id="joinDialog" class="modal"><form method="dialog"><button class="close-modal" aria-label="إغلاق">×</button></form><span class="eyebrow">سوق المستقلين</span><h2>الانضمام كمستقل</h2><p>نظام التسجيل واستقبال الطلبات والدفع غير مفعّل في هذه النسخة. يمكن تطويره لاحقًا مع قاعدة بيانات ونظام طلبات آمن.</p><button class="button button-primary" id="joinClose">حسنًا</button></dialog>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js" defer></script>
-</body>
-</html>
+<div class="splash" id="splash"><img src="anjiz-icon.svg" alt="شعار أَنْجِز"><h1>ANJIZ <span>أَنْجِز</span></h1><p>منصتك لإنجاز أعمالك الأكاديمية والمكتبية</p><div class="loader"></div></div>
+<section class="welcome" id="welcome" hidden>
+  <div class="welcome-logo"><img src="anjiz-icon.svg" alt="شعار أَنْجِز"></div>
+  <p class="eyebrow">مساحتك الأكاديمية في مكان واحد</p><h1>كل إنجاز يبدأ<br><em>بخطوة بسيطة.</em></h1>
+  <p class="muted">نظّم أعمالك الأكاديمية والمكتبية، واحتفظ بمشاريعك في مساحة عمل واحدة.</p>
+  <button class="primary full" id="startBtn">ابدأ الآن <span>←</span></button>
+  <button class="text-btn full" id="welcomeAccount">إنشاء حساب أو تسجيل الدخول</button>
+  <small>يمكنك البدء دون حساب. المشاريع تُحفظ على هذا الجهاز فقط.</small>
+</section>
+<div id="appShell" hidden>
+<header class="topbar"><a class="brand" href="#home"><img src="anjiz-icon.svg" alt=""><span><b>ANJIZ</b><small>أَنْجِز</small></span></a><div class="top-actions"><button class="icon-btn" id="themeToggle" aria-label="تغيير المظهر">◐</button><button class="icon-btn" id="profileBtn" aria-label="الملف الشخصي">☻</button></div></header>
+<main>
+<section class="page active" id="homePage">
+<div class="hello"><span class="eyebrow">مساحة الإنجاز</span><h1>أهلًا بك في <em>أَنْجِز</em></h1><p class="muted">ما الذي تريد إنجازه اليوم؟</p></div>
+<label class="search"><span>⌕</span><input id="serviceSearch" type="search" placeholder="ابحث عن خدمة أو أداة..."></label>
+<button class="create-banner" id="createProject"><span class="create-icon">＋</span><span><b>أنشئ مشروعًا جديدًا</b><small>ابدأ بتنظيم فكرتك وخطواتك</small></span><span class="arrow">←</span></button>
+<div class="section-title"><div><h2>خدمات أَنْجِز</h2><p class="muted">اختر الخدمة المناسبة لك</p></div><a href="#servicesPage" data-page="servicesPage">عرض الكل</a></div>
+<div class="service-grid" id="serviceGrid">
+<button class="service-card" data-title="مذكرة التخرج" data-desc="نظّم فصول المذكرة، والأهداف، والخطوات القادمة."><span class="service-icon blue">▤</span><b>مذكرة التخرج</b><small>تنظيم الفصول والخطة</small></button>
+<button class="service-card" data-title="بحث جامعي" data-desc="حدّد موضوع البحث والإشكالية والأهداف والكلمات المفتاحية."><span class="service-icon teal">⌕</span><b>بحث جامعي</b><small>من الفكرة إلى الخطة</small></button>
+<button class="service-card" data-title="تقرير التربص" data-desc="أنشئ هيكلًا للتقرير يشمل المؤسسة والمهام والخلاصة."><span class="service-icon purple">▣</span><b>تقرير التربص</b><small>هيكل واضح للتقرير</small></button>
+<button class="service-card" data-title="Word" data-desc="خطّط لتنسيق مستندات Word وأقسامها قبل البدء."><span class="service-icon coral">W</span><b>Word</b><small>تنسيق المستندات</small></button>
+<button class="service-card" data-title="Excel" data-desc="دوّن الجداول والبيانات التي تحتاج إلى تنظيمها."><span class="service-icon green">X</span><b>Excel</b><small>الجداول والبيانات</small></button>
+<button class="service-card" data-title="PowerPoint" data-desc="خطّط لعرضك التقديمي وحدّد عناوين الشرائح."><span class="service-icon gold">P</span><b>PowerPoint</b><small>تنظيم الشرائح</small></button>
+<button class="service-card" data-title="المراجع" data-desc="احتفظ بقائمة المراجع وملاحظاتك حول كل مصدر."><span class="service-icon lilac">❝</span><b>المراجع</b><small>تنظيم المصادر</small></button>
+<button class="service-card" data-title="أفكار وملاحظات" data-desc="احفظ فكرة أو ملاحظة مرتبطة بدراستك أو عملك."><span class="service-icon blue">✎</span><b>أفكار وملاحظات</b><small>لا تدع أفكارك تضيع</small></button>
+</div>
+<div class="section-title"><div><h2>مشاريعي</h2><p class="muted">آخر ما حفظته على هذا الجهاز</p></div><a href="#projectsPage" data-page="projectsPage">عرض الكل</a></div><div id="recentProjects" class="project-list"></div>
+</section>
+<section class="page" id="servicesPage"><div class="page-heading"><span class="eyebrow">أدواتك</span><h1>كل الخدمات</h1><p class="muted">اختاري خدمة لبدء تنظيم عملك.</p></div><div class="service-grid" id="allServices"></div></section>
+<section class="page" id="projectsPage"><div class="page-heading"><span class="eyebrow">مساحة العمل</span><h1>مشاريعي</h1><p class="muted">المشاريع التي حفظتها على هذا الجهاز.</p></div><form id="quickForm" class="panel"><label>عنوان المشروع<input id="quickTitle" required maxlength="100" placeholder="مثال: مذكرة التخرج"></label><label>ملاحظات (اختياري)<textarea id="quickDetails" maxlength="1000" rows="3" placeholder="اكتب الخطوات أو الأفكار..."></textarea></label><button class="primary" type="submit">حفظ المشروع</button></form><div class="project-list" id="projectList"></div><button class="secondary" id="exportProjects">تصدير نسخة احتياطية</button></section>
+<section class="page" id="smartPage"><div class="page-heading"><span class="eyebrow">قريبًا</span><h1>الأدوات الذكية</h1><p class="muted">هذه النسخة لا تتصل بعد بخدمات ذكاء اصطناعي حقيقية.</p></div><div class="panel"><span class="service-icon teal">✦</span><h2>مساعدك الأكاديمي</h2><p class="muted">سيُضاف لاحقًا بعد ربط خدمة آمنة. يمكنك حاليًا استخدام أدوات تنظيم المشاريع والملاحظات.</p><button class="primary" id="smartCreate">أنشئ مشروعًا بدلًا من ذلك</button></div><div class="panel"><h2>سوق المستقلين</h2><p class="muted">عرض الخدمات والطلبات والدفع غير مفعّل في النسخة الحالية.</p><button class="secondary" id="marketInfo">معرفة المزيد</button></div></section>
+<section class="page" id="profilePage"><div class="page-heading"><span class="eyebrow">إعداداتك</span><h1>الملف الشخصي</h1><p class="muted">خصّصي تجربة أَنْجِز كما يناسبك.</p></div><div class="panel settings"><button id="profileTheme">◐ <span>المظهر الفاتح / الداكن</span><b>›</b></button><label>اللغة<select id="languageSelect"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select></label><button id="accountBtn">♙ <span>إنشاء حساب / تسجيل الدخول</span><b>›</b></button><button id="aboutBtn">ⓘ <span>حول التطبيق والخصوصية</span><b>›</b></button><p class="muted" id="aboutText" hidden>هذه نسخة أولية. المشاريع تحفظ محليًا على هذا الجهاز. لا يوجد تسجيل حسابات حقيقي أو مزامنة سحابية أو دفع إلكتروني أو ذكاء اصطناعي متصل.</p></div><div class="panel"><h2>ANJIZ | أَنْجِز</h2><p class="muted">منصتك لإنجاز أعمالك الأكاديمية والمكتبية</p><small>نسخة أولية قابلة للتطوير · <span id="year"></span></small></div></section>
+</main>
+<nav class="bottom-nav" aria-label="التنقل الرئيسي"><button class="nav-item active" data-page="homePage"><span>⌂</span><small>الرئيسية</small></button><button class="nav-item" data-page="servicesPage"><span>▦</span><small>الخدمات</small></button><button class="nav-item" data-page="projectsPage"><span>▤</span><small>مشاريعي</small></button><button class="nav-item" data-page="smartPage"><span>✦</span><small>الأدوات</small></button><button class="nav-item" data-page="profilePage"><span>☻</span><small>حسابي</small></button></nav>
+</div>
+<dialog id="serviceDialog" class="modal"><button class="close" data-close>×</button><span class="eyebrow">خدمة أَنْجِز</span><h2 id="serviceTitle"></h2><p id="serviceDesc" class="muted"></p><form id="serviceSaveForm"><label>ملاحظات أو خطوات<textarea id="serviceNote" rows="4" maxlength="1000" placeholder="اكتب هنا..."></textarea></label><button class="primary full" type="submit">حفظ كمشروع</button></form><small class="muted">أداة تنظيم محلية وليست خدمة كتابة آلية.</small></dialog>
+<dialog id="accountDialog" class="modal"><button class="close" data-close>×</button><span class="eyebrow">الحسابات</span><h2>هذه الميزة قيد التطوير</h2><p class="muted">التسجيل الحقيقي يحتاج إلى خادم وقاعدة بيانات آمنة. لا تدخلي كلمة مرورك في هذه النسخة.</p><button class="primary full" data-close>حسنًا</button></dialog>
+<dialog id="infoDialog" class="modal"><button class="close" data-close>×</button><h2>سوق المستقلين</h2><p class="muted">الملفات الشخصية والطلبات والدفع والعمولات غير مفعّلة بعد، وستحتاج إلى نظام خلفي آمن.</p><button class="primary full" data-close>فهمت</button></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div><script src="app.js" defer></script>
+</body></html>
