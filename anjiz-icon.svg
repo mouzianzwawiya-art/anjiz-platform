@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#173e59"/><stop offset="1" stop-color="#10243a"/></linearGradient><linearGradient id="teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8bf0df"/><stop offset="1" stop-color="#26b9ad"/></linearGradient></defs>
-<rect x="3" y="3" width="122" height="122" rx="29" fill="url(#bg)"/>
-<path d="M25 33 Q44 27 63 39 L63 91 Q44 79 25 85 Z" fill="#fff" opacity=".96"/>
-<path d="M103 33 Q84 27 65 39 L65 91 Q84 79 103 85 Z" fill="url(#teal)"/>
-<path d="M64 39 V94" stroke="#10243a" stroke-width="4" stroke-linecap="round"/>
-<path d="M33 45 Q45 42 54 49 M33 57 Q45 54 54 61 M33 69 Q45 66 54 73" fill="none" stroke="#7d9bb1" stroke-width="3" stroke-linecap="round"/>
-<path d="M75 49 Q87 42 96 45 M75 61 Q87 54 96 57 M75 73 Q87 66 96 69" fill="none" stroke="#197c79" stroke-width="3" stroke-linecap="round"/>
-<path d="M43 25 L64 15 L85 25 L64 35 Z" fill="#75e4d4"/>
-<path d="M84 25 V38" stroke="#75e4d4" stroke-width="3" stroke-linecap="round"/>
-<circle cx="84" cy="41" r="4" fill="#75e4d4"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0871c9"/><stop offset="1" stop-color="#061c42"/></linearGradient><linearGradient id="book" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#56f2f0"/><stop offset="1" stop-color="#079ddc"/></linearGradient></defs><rect width="512" height="512" rx="112" fill="url(#bg)"/><g fill="#27d8e6"><rect x="340" y="115" width="23" height="23" rx="4"/><rect x="374" y="145" width="19" height="19" rx="3"/><rect x="339" y="178" width="26" height="26" rx="4"/><rect x="379" y="198" width="18" height="18" rx="3"/></g><path d="M160 170 256 125 352 170 256 213Z" fill="#fff"/><path d="M190 184v34c34 30 98 30 132 0v-34l-66 29z" fill="#d9edff"/><path d="M346 175v39l-11 18h22l-11-18" fill="#fff"/><path d="M180 229h152a12 12 0 0 1 12 12v95H168v-95a12 12 0 0 1 12-12" fill="#f7fbff"/><path d="M198 255h104M198 278h92M198 301h78" stroke="#123a68" stroke-width="9" stroke-linecap="round"/><path d="M256 338 96 393l-34-22 151-80z" fill="#e8f7ff"/><path d="M256 338 416 393l34-22-151-80z" fill="#e8f7ff"/><path d="M256 370 95 413l-33-42 194 75 194-75-34 42z" fill="url(#book)"/><path d="M256 370 256 446" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity=".9"/></svg>
