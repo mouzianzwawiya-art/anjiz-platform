@@ -12,3 +12,8 @@
 
 ## حدود النسخة
 الحسابات وتسجيل الدخول الاجتماعي، والمزامنة السحابية، وخدمات الذكاء الاصطناعي الفعلية، وطلبات المستقلين والدفع الإلكتروني غير موصولة بخادم في هذه النسخة. بيانات المشاريع محفوظة محليًا في المتصفح.
+
+
+## Updated visual assets
+- Replaced the app icon with the approved ANJIZ book/document/graduation-cap icon.
+- Replaced the illustrated welcome desk with the approved realistic study-desk photo (`welcome-desk.jpg`).
